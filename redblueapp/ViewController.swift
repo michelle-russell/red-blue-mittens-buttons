@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mittens: UIImageView!
+    
+    @IBOutlet weak var buttons: UIImageView!
+    
+    @IBOutlet weak var mittensButton: UIButton!
+    
+    @IBOutlet weak var buttonsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +27,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func hideMittens(sender: AnyObject) {
+        mittens.hidden = true
+    }
 
-
+    @IBAction func hideButtons(sender: AnyObject) {
+        buttons.hidden = true
+    }
 }
 
